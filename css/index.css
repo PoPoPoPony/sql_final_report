@@ -1,0 +1,72 @@
+#nav-mobile{
+    width: 20%;
+    right: 40%;
+    background-color: transparent;
+}
+
+.nav-wrapper>a{
+    left: 10%;
+    font-family: sans-serif;
+}
+
+nav{
+    background-color: rgba(0, 0, 0, 0.8)
+}
+ 
+#login_panel_container{
+    position: absolute;
+    top: 15%;
+    right: 15%;
+    width: 500px;
+    height: 550px;
+    background-color: white;
+    z-index: 2;
+    border-radius: 10%;
+    padding-left: 70px;
+    padding-top: 40px; 
+}
+
+.btn-small{
+    width: 80%;
+    height: 50px;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding-top: 10px;
+}
+
+#sign_up_panel_container{
+    position: absolute;
+    top:105%;
+    left: 15%;
+    width: 500px;
+    height: 570px;
+    background-color: white;
+    z-index: 2;
+    border-radius: 10%;
+    padding-left: 70px;
+    padding-top: 20px;
+}
+
+#section_2>img{
+    width: 100%;
+    z-index: -1;
+    border: 0;
+}
+
+#section_2{
+    height: 500px;
+}
+
+input[type=text]:not(.browser-default){
+    left: 10%;
+    padding-top: 20px;
+    font-size: 20px;
+    width: 80%;
+}
+
+input[type=password]:not(.browser-default){
+    left: 10%;
+    padding-top: 20px;
+    font-size: 20px;
+    width: 80%;
+}

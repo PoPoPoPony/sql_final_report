@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>final</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="../css/search.css">
+    </head>
+    <body>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="http://127.0.0.1/final_report/html/index.html" class="brand-logo">Pony's final report</a>
+            </div>
+        </nav>
+        <div id="icon_nav_container">
+            <button id="icon_insert" class="icon_nav">新增<br>資料</button>
+            <button id="icon_search" class="icon_nav">查詢資料</button>
+            <button id="icon_modify" class="icon_nav">修改資料</button>
+            <button id="icon_diagram" class="icon_nav">資料庫<br>圖表</button>
+        </div>
+
+        <div class="icon_bubble_triangle">
+            <img src="../image/icon_triangle.jpg">
+        </div>
+
+        <div class="icon_bubble_circle">
+            <img src="../image/icon_circle.jpg">
+        </div>
+        
+        <div class="icon_bubble_square">
+            <img src="../image/icon_square.jpg">
+        </div>
+        
+        <div class="icon_bubble_cross">
+            <img src="../image/icon_cross.jpg">
+        </div>
+
+        <div id="data_container" class="z-depth-5">
+            <h3 style="margin-top: 0%; font-family:cursive;">國立嘉義大學工讀申請表</h3>
+            
+            <label for="dep">系級：</label>
+            <input id="dep" type="text" class="input_text" style="width: 25%; padding-top: 10px;">
+            <label for="dep">系</label>
+            
+            <input id="grade" type="text" class="input_text" style="width: 5%; padding-top: 10px; text-align: center;">
+            <label for="grade">年級</label>
+
+            <label for="S_ID" style="margin-left: 7%;">學號：</label>
+            <input id="S_ID" type="text" class="input_text" style="width: 20%; padding-top: 10px;">
+
+            <br>
+
+            <label for="name">姓名：</label>
+            <input id="name" type="text" class="input_text" style="width: 25%; padding-top: 30px;">
+
+            <label for="sex" style="margin-left: 22%;">性別：</label>
+            <input id="sex" type="text" class="input_text" style="width: 20%; padding-top: 30px;">
+
+            <br>
+
+            <label for="ID">身分證字號：</label>
+            <input id="ID" type="password" class="input_text" style="width: 25%; padding-top: 30px;">
+
+            <label for="bDate" style="margin-left: 13%;">出生年月日：</label>
+            <input id="bDate" type="text" class="datepicker" style="width: 20%; padding-top: 30px;">
+
+            <br>
+
+            <label for="condition" style="position: absolute; top: 27%; left: 7%;">申請資格：</label>
+            <label style="position: absolute; top: 26%; left: 23%; font-size: 20px; font-family: cursive;">
+                <input type="checkbox" class="filled-in" name="condition" value="1"/>
+                <span>經濟弱勢學生</span>
+            </label>
+            <label style="position: absolute; top: 29%; left: 23%; font-size: 20px; font-family: cursive;">
+                <input type="checkbox" class="filled-in" name="condition" value="2"/>
+                <span>具有專長之學生</span>
+            </label>
+
+            <label style="position: absolute; top: 22%; left: 55%; font-size: 25px; font-family: cursive; width: 40%;">經濟弱勢學生：如低收入戶子女、中低收入戶子女、原住民、僑外生、身心障礙人士子女及身心障礙學生</label>
+            <label style="position: absolute; top: 30%; left: 55%; font-size: 25px; font-family: cursive; width: 40%;">具有專長之學生：如電腦、美術等特殊專長(請檢附證照或作品)</label>
+
+            <label style="position: absolute; top: 40%; left: 7%; font-size: 30px; font-family: cursive; width: 40%;">上學年<br>學業成績</label>
+            
+            <label for="a_score_1" style="position: absolute; top:39%; left: 20%;">第一學期：</label>
+            <input id="a_score_1" type="text" class="input_text" style="position: absolute; top:37%; left: 35%; width: 5%; padding-top: 30px;">
+            <label for="a_score_1" style="position: absolute; top:39%; left: 41%;">分</label>
+
+            <label for="a_score_2" style="position: absolute; top:44%; left: 20%;">第二學期：</label>
+            <input id="a_score_2" type="text" class="input_text" style="position: absolute; top:42%; left: 35%; width: 5%; padding-top: 30px;">
+            <label for="a_score_2" style="position: absolute; top:44%; left: 41%;">分</label>
+
+            <label style="position: absolute; top: 40%; left: 55%; font-size: 30px; font-family: cursive; width: 40%;">上學年<br>操行成績</label>
+            
+            <label for="c_score_1" style="position: absolute; top:39%; left: 68%;">第一學期：</label>
+            <input id="c_score_1" type="text" class="input_text" style="position: absolute; top:37%; left: 83%; width: 5%; padding-top: 30px;">
+            <label for="c_score_1" style="position: absolute; top:39%; left: 89%;">分</label>
+
+            <label for="c_score_2" style="position: absolute; top:44%; left: 68%;">第二學期：</label>
+            <input id="c_score_2" type="text" class="input_text" style="position: absolute; top:42%; left: 83%; width: 5%; padding-top: 30px;">
+            <label for="c_score_2" style="position: absolute; top:44%; left: 89%;">分</label>
+
+            <label for="email" style="position: absolute; top: 50%; left: 7%;">電子郵件：</label>
+            <input id="email" type="text" class="input_text" style="position: absolute; top: 48%; left: 22%; width: 25%; padding-top: 30px; ">
+
+            <label for="phone" style="position: absolute; top: 50%; left: 55%;">連絡電話：</label>
+            <input id="phone" type="text" class="input_text" style="position: absolute; top: 48%; left: 70%; width: 25%; padding-top: 30px; ">
+
+            <label for="time" style="position: absolute; top: 60%; left: 7%;">可工讀時間：</label>
+            <label style="position: absolute; top: 58%; left: 25%; font-size: 20px; font-family: cursive;">
+                <input type="checkbox" class="filled-in" name="time" value="1"/>
+                <span>白天工讀</span>
+            </label>
+            <label style="position: absolute; top: 61%; left: 25%; font-size: 20px; font-family: cursive;">
+                <input type="checkbox" class="filled-in" name="time" value="2"/>
+                <span>夜間工讀</span>
+            </label>
+            <label style="position: absolute; top: 64%; left: 25%; font-size: 20px; font-family: cursive;">
+                <input type="checkbox" class="filled-in" name="time" value="3"/>
+                <span>進修部相關單位工讀</span>
+            </label>
+
+            <label for="unit" style="position: absolute; top: 60%; left: 55%;">擬工讀單位：</label>
+            <label style="position: absolute; top: 57%; left: 75%; font-size: 20px; font-family: cursive;">
+                <input type="checkbox" class="filled-in" name="unit" value="1"/>
+                <span>行政單位</span>
+            </label>
+            <label style="position: absolute; top: 59%; left: 75%; font-size: 20px; font-family: cursive;">
+                <input type="checkbox" class="filled-in" name="unit" value="2"/>
+                <span>圖書館</span>
+            </label>
+            <label style="position: absolute; top: 61%; left: 75%; font-size: 20px; font-family: cursive;">
+                <input type="checkbox" class="filled-in" name="unit" value="3"/>
+                <span>語言中心</span>
+            </label>
+            <label style="position: absolute; top: 63%; left: 75%; font-size: 20px; font-family: cursive;">
+                <input type="checkbox" class="filled-in" name="unit" value="4"/>
+                <span>電算中心</span>
+            </label>
+            <label style="position: absolute; top: 65%; left: 75%; font-size: 20px; font-family: cursive;">
+                <input type="checkbox" class="filled-in" name="unit" value="5"/>
+                <span>環安中心</span>
+            </label>
+
+            <label for="teacher" style="position: absolute; top: 68%; left: 7%;">導師簽章：</label>
+            <input id="teacher" type="text" class="input_text" style="position: absolute; top: 66%; left: 22%; width: 25%; padding-top: 30px; ">
+
+            <label for="f_count" style="position: absolute; top: 73%; left: 7%;">家庭人數：</label>
+            <input id="f_count" type="text" class="input_text" style="position: absolute; top: 71%; left: 22%; width: 10%; padding-top: 30px; ">
+
+            <label for="s_count" style="position: absolute; top: 73%; left: 37%;">就學人數：</label>
+            <input id="s_count" type="text" class="input_text" style="position: absolute; top: 71%; left: 52%; width: 10%; padding-top: 30px; ">
+
+            <label for="w_count" style="position: absolute; top: 73%; left: 67%;">工作人數：</label>
+            <input id="w_count" type="text" class="input_text" style="position: absolute; top: 71%; left: 82%; width: 10%; padding-top: 30px; ">
+
+            <label for="career" style="position: absolute; top: 78%; left: 7%;">家長職業：</label>
+            <input id="career" type="text" class="input_text" style="position: absolute; top: 76%; left: 22%; width: 10%; padding-top: 30px; ">
+
+            <label for="income" style="position: absolute; top: 78%; left: 37%;">收入情形：</label>
+            <input id="income" type="text" class="input_text" style="position: absolute; top: 76%; left: 52%; width: 10%; padding-top: 30px; ">
+
+            <label for="other" style="position: absolute; top: 78%; left: 67%;">其他：</label>
+            <input id="other" type="text" class="input_text" style="position: absolute; top: 76%; left: 82%; width: 10%; padding-top: 30px; ">
+
+            <label for="wish" style="position: absolute; top: 83%; left: 7%;">工作志願及專長(可選擇多項)：</label>
+            <label style="position: absolute; top: 87%; left: 15%; font-size: 20px; font-family: cursive;">
+                <input type="checkbox" class="filled-in" name="wish" value="1"/>
+                <span>文書工作</span>
+            </label>
+            <label style="position: absolute; top: 87%; left: 35%; font-size: 20px; font-family: cursive;">
+                <input type="checkbox" class="filled-in" name="wish" value="2"/>
+                <span>辦公室/研究室清潔維護</span>
+            </label>
+            <label style="position: absolute; top: 87%; left: 73%; font-size: 20px; font-family: cursive;">
+                <input type="checkbox" class="filled-in" name="wish" value="3"/>
+                <span>校園清潔維護</span>
+            </label>
+            <label style="position: absolute; top: 91%; left: 15%; font-size: 20px; font-family: cursive;">
+                <input type="checkbox" class="filled-in" name="wish" value="4"/>
+                <span>電腦</span>
+            </label>
+            <label style="position: absolute; top: 91%; left: 35%; font-size: 20px; font-family: cursive;">
+                <input type="checkbox" class="filled-in" name="wish" value="5"/>
+                <span>美術海報設計</span>
+            </label>
+            <label style="position: absolute; top: 91%; left: 73%; font-size: 20px; font-family: cursive;">
+                <input type="checkbox" class="filled-in" name="wish" value="6"/>
+                <span>其他</span>
+            </label>
+
+            <a class="waves-effect waves-light btn" id="search"><i class="material-icons right">search</i>search</a>
+            
+
+        </div>
+
+        <div class="table_container1">
+            <table id="search_table1">
+                <thead>
+                    <tr>
+                        <th>系所</th>
+                        <th>年級</th>
+                        <th>學號</th>
+                        <th>姓名</th>
+                        <th>性別</th>
+                        <th>ID</th>
+                        <th>bDate</th>
+                        <th>email</th>
+                        <th>phone</th>
+                        <th>資格</th>
+                        <th>時間</th>
+                        <th>單位</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+
+        <div class="table_container2">
+            <table id="search_table2">
+                <thead>
+                    <tr>
+                        <th>導師</th>
+                        <th>家庭人數</th>
+                        <th>就學人數</th>
+                        <th>工作人數</th>
+                        <th>家長職業</th>
+                        <th>收入情形</th>
+                        <th>其他</th>
+                        <th>工作志願及專長</th>
+                        <th>學業成績1</th>
+                        <th>學業成績2</th>
+                        <th>操行成績1</th>
+                        <th>操行成績2</th>
+                        <th>L_ID</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+
+
+        
+
+
+    </div>
+
+
+        
+
+
+
+
+
+
+
+    
+        
+    </body>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="../js/search.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</html>
+
+
+
+
+
